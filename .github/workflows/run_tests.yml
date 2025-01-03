@@ -24,6 +24,7 @@ jobs:
           python-version: "3.13"
       - name: install dependencies
         run: pip install -r requirements.txt
+      - name: Up
+        run: cd.. 
       - name: Run tests
-        run: cd.. pytest -v
-        
+        run: pytest -v        
